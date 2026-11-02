@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { --flamingo-plum: #4A235A; --flamingo-gold: #D4AF7A; }
+html { scroll-behavior: smooth; }
+body { @apply bg-white text-zinc-800 antialiased; font-family: var(--font-inter), system-ui, sans-serif; }
+h1, h2, h3, h4, .font-serif { font-family: var(--font-playfair), serif; }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { @apply bg-flamingo-ivory; }
+::-webkit-scrollbar-thumb { @apply bg-flamingo-plum/30 rounded-full; }
+.btn-primary { @apply bg-flamingo-plum text-white px-8 py-3.5 rounded-full font-medium tracking-wide hover:bg-flamingo-deep transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 inline-flex items-center justify-center; }
+.btn-gold { @apply bg-flamingo-gold text-flamingo-deep px-8 py-3.5 rounded-full font-medium hover:bg-flamingo-goldDeep transition-all duration-300 shadow-lg hover:shadow-xl inline-flex items-center justify-center; }
+.btn-outline { @apply border border-flamingo-plum text-flamingo-plum px-8 py-3.5 rounded-full font-medium hover:bg-flamingo-plum hover:text-white transition-all duration-300 inline-flex items-center justify-center; }
+.card-hover { @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl; }
+.glass { @apply bg-white/80 backdrop-blur-xl border border-white/20; }

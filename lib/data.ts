@@ -1,0 +1,71 @@
+
+import { IMAGES } from "./images";
+export type RentalCategory = { slug: string; label: string; description: string; image: string; };
+export type RentalItem = { id: string; name: string; category: string; categoryLabel: string; description: string; image: string; popular?: boolean; };
+export const RENTAL_CATEGORIES: RentalCategory[] = [
+  { slug: "flowers", label: "Flowers & Bouquets", description: "Super neat, fresh-looking floral arrangements for every celebration.", image: IMAGES.categories.flowers },
+  { slug: "centrepieces", label: "Centrepieces", description: "New, clean and very neat centrepieces that elevate any table.", image: IMAGES.categories.centrepieces },
+  { slug: "moroccan-lamps", label: "Moroccan Lamps", description: "Warm, ambient lighting with intricate Moroccan craftsmanship.", image: IMAGES.categories.moroccanLamps },
+  { slug: "cake-stands", label: "Luxury Cake Stands", description: "Statement stands that make your cake the centre of attention.", image: IMAGES.categories.cakeStands },
+  { slug: "backdrops", label: "Backdrops", description: "Elegant backdrops for photos, stages and ceremony highlights.", image: IMAGES.categories.backdrops },
+  { slug: "love-arches", label: "Love Arches", description: "Romantic arches for proposals, weddings and intimate setups.", image: IMAGES.categories.loveArches },
+  { slug: "fabrics", label: "Fabrics & Draping", description: "Premium fabrics for draping, ceiling and table styling.", image: IMAGES.categories.fabrics },
+  { slug: "charger-plates", label: "Charger Plates", description: "Luxury charger plates for refined table settings.", image: IMAGES.categories.chargerPlates },
+  { slug: "neon-lights", label: "Neon Lights", description: "Very bright, modern neon signs and custom phrases.", image: IMAGES.categories.neonLights },
+  { slug: "chandeliers", label: "Chandeliers", description: "Sparkling chandeliers to add luxury overhead.", image: IMAGES.categories.chandeliers },
+  { slug: "plinths", label: "Plinths", description: "Modern display plinths for flowers, cakes and decor.", image: IMAGES.categories.plinths },
+  { slug: "other", label: "Other Decoration Items", description: "Curated extras to complete your perfect look.", image: IMAGES.categories.other },
+];
+export const RENTAL_ITEMS: RentalItem[] = [
+  { id: "flw-1", name: "Blush Peony Bouquet", category: "flowers", categoryLabel: "Flowers & Bouquets", description: "Soft blush peonies with eucalyptus, neat and fresh.", image: "https://images.unsplash.com/photo-1561181286-d3fee7d55364?q=80&w=800&auto=format&fit=crop", popular: true },
+  { id: "flw-2", name: "White Rose Bridal Bouquet", category: "flowers", categoryLabel: "Flowers & Bouquets", description: "Classic white roses, perfect for bridal entrance.", image: "https://images.unsplash.com/photo-1522748906645-95d8adfd52c7?q=80&w=800&auto=format&fit=crop" },
+  { id: "flw-3", name: "Pampas & Dried Floral Arrangement", category: "flowers", categoryLabel: "Flowers & Bouquets", description: "Trendy pampas mix for modern boho setups.", image: "https://images.unsplash.com/photo-1487537023671-8dce1a785863?q=80&w=800&auto=format&fit=crop" },
+  { id: "flw-4", name: "Table Bloom Posy", category: "flowers", categoryLabel: "Flowers & Bouquets", description: "Compact bloom for guest tables and welcome areas.", image: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=800&auto=format&fit=crop" },
+  { id: "cen-1", name: "Gold Crystal Centrepiece", category: "centrepieces", categoryLabel: "Centrepieces", description: "New and beautiful gold centrepiece with crystal details.", image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800&auto=format&fit=crop", popular: true },
+  { id: "cen-2", name: "Tall Glass Vase Centrepiece", category: "centrepieces", categoryLabel: "Centrepieces", description: "Elegant tall vase for elevated floral displays.", image: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=800&auto=format&fit=crop" },
+  { id: "cen-3", name: "Marble & Gold Low Centrepiece", category: "centrepieces", categoryLabel: "Centrepieces", description: "Modern low profile, ideal for conversation tables.", image: "https://images.unsplash.com/photo-1505236858211-45d3e19ff6ca?q=80&w=800&auto=format&fit=crop" },
+  { id: "mor-1", name: "Gold Moroccan Hanging Lamp", category: "moroccan-lamps", categoryLabel: "Moroccan Lamps", description: "Top-rated, very bright Moroccan lamp as reviewed by customers.", image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?q=80&w=800&auto=format&fit=crop", popular: true },
+  { id: "mor-2", name: "Mosaic Table Lantern", category: "moroccan-lamps", categoryLabel: "Moroccan Lamps", description: "Colourful mosaic lantern for intimate corners.", image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?q=80&w=800&auto=format&fit=crop" },
+  { id: "cake-1", name: "Luxurious Gold Cake Stand", category: "cake-stands", categoryLabel: "Luxury Cake Stands", description: "Loved by clients, delivers luxury and height for cakes.", image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop", popular: true },
+  { id: "cake-2", name: "Crystal Tiered Stand", category: "cake-stands", categoryLabel: "Luxury Cake Stands", description: "Tiered crystal stand for multi-layer presentations.", image: "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=800&auto=format&fit=crop" },
+  { id: "back-1", name: "Floral Wall Backdrop", category: "backdrops", categoryLabel: "Backdrops", description: "Lush floral wall for photos and stage.", image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800&auto=format&fit=crop", popular: true },
+  { id: "back-2", name: "Champagne Fabric Draped Backdrop", category: "backdrops", categoryLabel: "Backdrops", description: "Soft champagne drapes with fairy lights.", image: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=800&auto=format&fit=crop" },
+  { id: "back-3", name: "Circular Hoop Backdrop", category: "backdrops", categoryLabel: "Backdrops", description: "Modern circular hoop for proposals and weddings.", image: "https://images.unsplash.com/photo-1520854221256-17451ccdf07b?q=80&w=800&auto=format&fit=crop" },
+  { id: "arch-1", name: "Romantic Love Arch with Roses", category: "love-arches", categoryLabel: "Love Arches", description: "Signature love arch, perfect for proposals.", image: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop", popular: true },
+  { id: "arch-2", name: "Minimal White Love Arch", category: "love-arches", categoryLabel: "Love Arches", description: "Minimalist arch for clean, modern romance.", image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=800&auto=format&fit=crop" },
+  { id: "fab-1", name: "Champagne Chiffon Draping", category: "fabrics", categoryLabel: "Fabrics & Draping", description: "Premium chiffon for ceiling and backdrop draping.", image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800&auto=format&fit=crop" },
+  { id: "fab-2", name: "Ivory Velvet Table Linen", category: "fabrics", categoryLabel: "Fabrics & Draping", description: "Luxurious velvet for elegant table styling.", image: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop" },
+  { id: "fab-3", name: "Blush Satin Runner", category: "fabrics", categoryLabel: "Fabrics & Draping", description: "Soft blush satin to layer your tablescape.", image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800&auto=format&fit=crop" },
+  { id: "chp-1", name: "Gold Rim Charger Plate", category: "charger-plates", categoryLabel: "Charger Plates", description: "Classic gold rim for premium place settings.", image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&auto=format&fit=crop", popular: true },
+  { id: "chp-2", name: "Mirrored Glass Charger", category: "charger-plates", categoryLabel: "Charger Plates", description: "Reflective mirrored charger for luxury tables.", image: "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=800&auto=format&fit=crop" },
+  { id: "neo-1", name: "Better Together Neon", category: "neon-lights", categoryLabel: "Neon Lights", description: "Very bright neon, client favourite.", image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=800&auto=format&fit=crop", popular: true },
+  { id: "neo-2", name: "Custom Name Neon Sign", category: "neon-lights", categoryLabel: "Neon Lights", description: "Custom names and phrases in warm white.", image: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2c4?q=80&w=800&auto=format&fit=crop" },
+  { id: "chan-1", name: "Crystal Drop Chandelier", category: "chandeliers", categoryLabel: "Chandeliers", description: "Sparkling overhead centrepiece.", image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop" },
+  { id: "chan-2", name: "Modern Gold Chandelier", category: "chandeliers", categoryLabel: "Chandeliers", description: "Modern gold frame with crystal drops.", image: "https://images.unsplash.com/photo-1540932239986-30128078f3c5?q=80&w=800&auto=format&fit=crop" },
+  { id: "plin-1", name: "White Acrylic Plinth Set", category: "plinths", categoryLabel: "Plinths", description: "Set of 3 modern plinths for displays.", image: "https://images.unsplash.com/photo-1478146896981-b80b82f6cdd7?q=80&w=800&auto=format&fit=crop" },
+  { id: "plin-2", name: "Gold Cylinder Plinth", category: "plinths", categoryLabel: "Plinths", description: "Luxury gold plinth for cake or florals.", image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800&auto=format&fit=crop" },
+  { id: "oth-1", name: "Welcome Sign Easel", category: "other", categoryLabel: "Other Decoration Items", description: "Elegant easel for welcome signage.", image: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=800&auto=format&fit=crop" },
+  { id: "oth-2", name: "Candle Holder Set", category: "other", categoryLabel: "Other Decoration Items", description: "Gold candle holders for ambient tables.", image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=800&auto=format&fit=crop" },
+];
+export const SERVICES = [
+  { slug: "decoration", title: "Event Decoration & Styling", description: "Beautiful, cohesive decoration elements tailored to your celebration theme, from intimate birthdays to grand receptions.", image: IMAGES.categories.centrepieces },
+  { slug: "wedding", title: "Wedding & Engagement Decorations", description: "Elegant wedding and engagement styling with clean, beautiful and quality rental items that photograph beautifully.", image: IMAGES.hero },
+  { slug: "proposal", title: "Proposal Decorations", description: "Romantic setups including our signature love arches, floral walls and soft lighting to make the moment unforgettable.", image: IMAGES.categories.loveArches },
+  { slug: "backdrops", title: "Event Backdrops", description: "Premium backdrops - floral walls, fabric draped, circular hoops - for stages, photo areas and ceremonies.", image: IMAGES.categories.backdrops },
+  { slug: "flowers", title: "Flower Rentals & Bouquets", description: "Super neat flowers and bouquets - fresh-looking arrangements delivered swiftly across Garki and Abuja.", image: IMAGES.categories.flowers },
+  { slug: "centrepieces", title: "Centrepiece Rentals", description: "Very new and beautiful centrepieces that clients love. Clean, neat and ready to impress your guests.", image: IMAGES.categories.centrepieces },
+  { slug: "table-styling", title: "Table & Venue Styling", description: "Complete tablescaping with charger plates, linens, candles and centrepieces for refined celebrations.", image: IMAGES.categories.chargerPlates },
+  { slug: "draping", title: "Fabric Draping", description: "Premium fabrics and draping materials for ceiling, walls and tables to transform your venue.", image: IMAGES.categories.fabrics },
+];
+export type Review = { name: string; text: string; rating: number; };
+export const REVIEWS: Review[] = [
+  { name: "Ruth Oryongo", text: "They have super neat flowers, a beautiful environment and top-notch customer service. I also rented centrepieces and a Moroccan lamp.", rating: 5 },
+  { name: "Sunday Michael", text: "They have very new and beautiful centrepieces. Their customer service is top-notch!", rating: 5 },
+  { name: "Umar Sule Adi", text: "I rented a bouquet for my sister and they delivered swiftly. The flower was also very neat. I recommend them.", rating: 5 },
+  { name: "Bukata Abache Musa", text: "I have a good review for you. Your light is very, very bright. You just gained a customer.", rating: 5 },
+  { name: "Obam Jonah", text: "I rented their luxurious cake stand. I really loved it, and they delivered too.", rating: 5 },
+  { name: "Eluke Elizabeth", text: "Exceptional service, definitely using them again.", rating: 5 },
+  { name: "JP Floriest", text: "Their service was excellent, and everything was handled professionally. Highly recommended!", rating: 5 },
+  { name: "Mattolina Onomourhoya", text: "Their decoration rental items are new, clean and very neat. They have flowers, love arches, centrepieces and fabrics for draping.", rating: 5 },
+  { name: "Folashade Janet Afolabi", text: "Beautiful. Excellent customer service.", rating: 5 },
+];
